@@ -1,6 +1,13 @@
 # libft
 Standard and non-standard libc function implementations during 42Heilbronn curriculum.
 
+# Performance
+|Tester|Result|
+|---|---|
+|Moulinette|125|
+|francinette (paco)|✅|
+|francinette `--strict`|✅|
+
 # Functions
 ```c
 int		ft_isalpha(int c);

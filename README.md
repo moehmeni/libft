@@ -66,7 +66,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 </details>
 
 <details>
-<summary>Additinal</summary>
+<summary>Additional</summary>
 
 ```c
 void	ft_lstshift_right(t_list **lst);

@@ -8,7 +8,10 @@ Standard and non-standard libc function implementations during 42Heilbronn curri
 |francinette (paco)|✅|
 |francinette `--strict`|✅|
 
-# Functions
+# Prototypes
+<details>
+<summary>Requested</summary>
+
 ```c
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -59,3 +62,14 @@ void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 ```
+
+</details>
+
+<details>
+<summary>Additinal</summary>
+
+```c
+void	ft_lstshift_right(t_list **lst);
+void	ft_lstshift_left(t_list **lst);
+```
+</details>

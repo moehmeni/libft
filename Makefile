@@ -6,7 +6,7 @@
 #    By: mmomeni <mmomeni@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/21 18:30:23 by mmomeni           #+#    #+#              #
-#    Updated: 2023/04/23 18:44:30 by mmomeni          ###   ########.fr        #
+#    Updated: 2023/04/24 00:32:44 by mmomeni          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,7 @@ ft_lstclear.c ft_lstiter.c ft_lstmap.c ft_lstshift_right.c ft_lstshift_left.c
 SRC_OBJS=	$(SRCS:.c=.o)
 BONUS_OBJS=	$(BONUS_SRCS:.c=.o)
 OBJS=		$(SRC_OBJS) $(BONUS_OBJS)
+ARFLAGS=	crs
 
 all: $(NAME)
 

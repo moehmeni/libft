@@ -6,7 +6,7 @@
 /*   By: mmomeni <mmomeni@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/21 15:45:13 by mmomeni           #+#    #+#             */
-/*   Updated: 2023/04/23 18:44:17 by mmomeni          ###   ########.fr       */
+/*   Updated: 2023/05/07 19:48:06 by mmomeni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 # define LIBFT_H
 # include "stdlib.h"
 # include "unistd.h"
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 256
+# endif
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -65,5 +68,6 @@ void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 void	ft_lstshift_right(t_list **lst);
 void	ft_lstshift_left(t_list **lst);
+char	*get_next_line(int fd);
 
 #endif
